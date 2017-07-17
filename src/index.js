@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import configureStore from './store/store';
+require("!style-loader!css-loader!sass-loader!./sass/all.scss");
 
 import Root from './components/root';
 
