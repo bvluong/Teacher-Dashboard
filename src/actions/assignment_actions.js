@@ -1,11 +1,15 @@
-import * as AssignmentAPIUtil from '../util/channel_api_util';
+import * as AssignmentAPIUtil from '../util/assignment_api_util';
 
 export const RECEIVE_ASSIGNEMENTS = "RECEIVE_ASSIGNMENTS";
 
-export const receiveAssignments = assignments => ({
+export const receiveAssignments = assignments =>
+  {
+  console.log(assignments);
+  return  {
   type: RECEIVE_ASSIGNEMENTS,
   assignments
-});
+};
+};
 
 
 export const fetchAssignments = () => dispatch => (
