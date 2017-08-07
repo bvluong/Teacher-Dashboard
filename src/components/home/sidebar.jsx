@@ -20,7 +20,6 @@ class SideBar extends React.Component {
   render() {
     return (
       <div className='sidebar'>
-        <h3>Assignments</h3>
         <ul className='sidebar-index'>
           {this.mapAssignDetails()}
         </ul>

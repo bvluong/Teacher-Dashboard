@@ -8,6 +8,7 @@ class Home extends React.Component {
   render () {
     return (
     <div className='home'>
+      <h2 className='header'>Assignments</h2>
       <SideBarContainer/>
     </div>
     );
