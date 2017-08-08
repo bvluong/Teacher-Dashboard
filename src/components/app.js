@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
+import { Route, Switch } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import Home from './home/home';
 
 const App = () => (
-  <div>
-    <Home/>
-    <div className="main-app">
-    </div>
+  <div className="main-app">
+    <Switch>
+        <Route path='/' component={Home}/>
+    </Switch>
   </div>
 );
 
