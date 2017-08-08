@@ -19,6 +19,6 @@ export const fetchAssignments = () => dispatch => (
 );
 
 export const fetchAssignment = (id) => dispatch => (
-  AssignmentAPIUtil.fetchAssignments(id)
-  .then(assignments => dispatch(receiveAssignment(assignments)))
+  AssignmentAPIUtil.fetchAssignment(id)
+  .then(assignment => dispatch(receiveAssignment(assignment)))
 );

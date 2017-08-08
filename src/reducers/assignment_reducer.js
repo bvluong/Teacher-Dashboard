@@ -1,11 +1,11 @@
-import { RECEIVE_ASSIGNMENTS, RECEIVE_ASSIGNMENT } from '../actions/assignment_actions';
+import { RECEIVE_ASSIGNMENTS } from '../actions/assignment_actions';
 import { merge } from 'lodash';
 
 const defaultState = {
 
 };
 
-const assignmentReducer = (state = defaultState, action) => {
+const assignmentsReducer = (state = defaultState, action) => {
   Object.freeze(state);
   switch (action.type) {
     case RECEIVE_ASSIGNMENTS:
@@ -19,12 +19,9 @@ const assignmentReducer = (state = defaultState, action) => {
         };
       });
       return merge({}, defaultState, newState );
-    case RECEIVE_ASSIGNMENT:
-      console.log(action);
-      return merge({}, defaultState, action);
     default:
       return state;
   }
 };
 
-export default assignmentReducer;
+export default assignmentsReducer;

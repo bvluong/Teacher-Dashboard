@@ -9,6 +9,7 @@ class SideBar extends React.Component {
 
   componentDidMount() {
     this.props.fetchAssignments();
+    this.props.fetchAssignment(24800143);
   }
 
   mapAssignDetails() {
